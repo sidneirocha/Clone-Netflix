@@ -1,0 +1,359 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    background: black;
+}
+h1 {
+    color: white;
+}
+.menu {
+    position: fixed;
+    display: flex;
+    height: 100%;
+    z-index: 100;
+    width: auto;
+    justify-content: space-between;
+    max-width: 1790px;
+    top: 28px;
+    left: 56px;
+    right: 56px;}
+
+    .menu menu-rodape {
+        color: #2f2f2f;
+    }
+.menu a {
+    display:inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 18px;
+    background: #e50914;
+    border-radius: 3px;
+    color: white;
+    align-self: flex-start;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+.menu a.idioma {
+    display:inline-block;
+    stroke: 1px;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 18px;
+    background: transparent;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    align-self: flex-start;
+    align-items: flex-end;
+    justify-content:flex-end;
+    border-style: solid;
+    border-width: 0.1px;
+
+}
+
+.menu a.idioma::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../img/globe-icone.svg");
+    margin-right: 5px;
+
+}
+.menu a.idioma::after {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 7px;
+    background: url("../img/seta.png");
+    margin-left: 5px;
+}
+
+.logo {
+    height: 46px;
+}
+
+.gradiente {
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    position: absolute;
+    top:0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+}
+.bgmenu {
+    background: rgba(0, 0, 0, 0.5);
+    position:fixed;
+    max-height: 100px;
+    top:0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+}
+.main {
+    height: 780px;
+    text-align: center;
+    background: url("../img/bg.jpg") center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;  
+}
+
+
+.texto-main {
+    z-index: 1050;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.main h1 {
+    font-size: 64px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.main h2 {
+    font-size: 25px;
+    max-width: 700px; 
+    margin: auto;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 565px 250px;
+    margin-top: 20px;
+}
+
+.form input {
+    padding: 28px 20px;
+    border:none
+}
+
+.form input:hover {
+    padding: 28px 20px;
+    border:none
+}
+
+.form button {
+    background: #e50914;
+    color: white;
+    font-size: 26px;
+    border: none;   
+    cursor: pointer;
+}
+
+.form button::after {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 19px;
+    background: url("../img/seta.svg");
+    margin-left: 20px;
+}
+
+.form button:hover {
+    background: #b90911;    
+    color: white;
+    font-size: 26px;
+    border: none;
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    color: white;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.produto2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    color: white;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.section {
+    margin-bottom: 100px;
+    border-bottom: 0.1px solid rgb(49, 49, 49);
+}
+
+.hr {
+    border: 4px solid #2f2f2f;
+    
+}
+
+.bloco-texto-direita {
+    margin-left: 100px;
+}
+
+.bloco-texto-direita h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.bloco-texto-direita p{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.bloco-texto-esquerda h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.bloco-texto-esquerda p{
+    display: grid;
+    font-size: 24px;
+    font-weight: 300;
+}
+.bloco-texto-esquerda {
+    display: grid;
+    margin-right: 100px;
+}
+
+.lista {
+    height: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px; 
+    }
+
+.accordion {
+    cursor: pointer;
+    width: 100%;
+    justify-content: space-between;
+    text-align: left;
+    list-style-type:none;
+    max-width: 815px; 
+    margin-top: 150px;        
+    }
+
+    .accordion:hover{
+    transition: 300ms;
+    transform: scale(10deg); 
+    cursor: pointer;
+    width: 100%;
+    justify-content: space-between;
+    text-align: left;
+    list-style-type:none;
+    max-width: 815px; 
+    margin-top: 150px; 
+    }
+.accordion h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.accordion h1:hover {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    transition: 300ms;
+    transform: scale(10deg);
+}
+
+
+    .item {
+        background: #303030;
+        color: #eee;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 28px;
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: 300;
+       }
+
+       .item:hover {
+        background: #303030;
+        color: #eee;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 28px;
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: 300;
+        transition: 300ms;
+        transform: scale(10deg);
+       }
+
+
+    .lista p {
+    background: #303030;
+    color: #eee;   
+    padding: 28px;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 2rem;
+       }
+
+      .form2 {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        position: relative;  
+        margin-top: 20px;
+        margin-bottom: 100px;
+        z-index: 100;
+    }
+
+    .form2 p {
+        margin-top: 150px;
+        margin-bottom: 0px;
+    }
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    z-index: 100;
+    gap: 50px;
+    text-decoration: none;
+}
+
+.rodape li {
+background: none;
+font-size: 12px;
+margin-top: 5px;
+margin-bottom: 0px;
+color: #868686;
+list-style: none
+}
+
+
+.rodape ul {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    max-width: 900px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    line-height: 32px;
+}
+
