@@ -1,4 +1,4 @@
-# Clone-Netflix
+# Clone Website Netflix (HTML+CSS)
 
 
 Projeto de estudo, com foco em reproduzir com fidelidade a página da Netflix versão Desktop apenas. Fiz alguns ajustes visuais mas de forma geral foi uma experiência muito boa, consegui aplicar as técnicas de Flexbox e ter uma maior noção da construção das sessões. 
